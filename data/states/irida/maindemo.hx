@@ -10,7 +10,7 @@ static var curMain:Int = 0;
 var trans:Bool = false;
 
 var sfx:FlxSound = FlxG.sound.load(Paths.sound("menu/confirm"));
-
+ 
 function create() {
     if (FlxG.sound.music == null)
         CoolUtil.playMusic(Paths.music("menu"), true, 1, true);
@@ -38,6 +38,10 @@ function update() {
 
     if (controls.BACK && !trans)
         FlxG.switchState(new ModState("irida/title"));
+	if (FlxG.keys.justPressed.SEVEN) {
+		openSubState(new EditorPicker());
+		persistentUpdate = !(persistentDraw = true);
+	}
 
     if ((controls.ACCEPT || FlxG.keys.justPressed) && !trans) {
         trans = true;
