@@ -20,6 +20,6 @@ function update() {
     if (controls.ACCEPT && !entered) {
         entered = true;
         FlxG.camera.stopFade();
-        FlxG.camera.fade(FlxColor.BLACK, 0.5, false, () -> FlxG.switchState(new ModState("irida/" + (FlxG.save.data.iridaSeenIntro ? "title" : "introdemo"))));
+        FlxG.camera.fade(FlxColor.BLACK, 0.5, false, () -> FlxG.switchState(new ModState("irida/" + (FlxG.save.data.iridaSeenIntro ? "introdemo" : "introdemo"))));
     }
 }

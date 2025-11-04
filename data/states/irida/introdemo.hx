@@ -9,14 +9,12 @@ var spikeD:FlxBackdrop = new FlxBackdrop(Paths.image("menus/title/spikes"), FlxA
 var bloom:CustomShader;
 var logosmall:FunkinSprite = new FunkinSprite(0, 0, Paths.image("menus/title/logosmallfortheintro"));
 
-var text:FunkinText = new FunkinText(0, 0, 300, "This is the demo for:", 20, true);
+var text:FunkinText = new FunkinText(0, 0, 300, "This is a modification of:", 20, true);
 static var intros:Array<String> = [
-    "Due to this being a demo, there may be some performance issues present which we aim to fix over time for full release.",
-    "Additionally, some content seen here may be changed and improved between now and the final version.\n\nRespectful feedback can help out a lot!",
-    "nvm the mods cancelled no final version </3",
+    "Due to this being a modification, I am not associated with boing bingus or any irida developer\n\nI do not support what boing bingus did.",
+    "Additionally, some content seen here may be changed and improved between now and future versions.\n\nRespectful feedback can help out a lot!",
     "If your device is struggling, please try turning off shaders and/or turning on low memory mode in the options menu.\n\nThis will improve performance at the sacrifice of visuals.",
-    "This mod is powered by Codename Engine. Please do not take any assets from the mod and put it in any other engines.\n\nIt makes our coders sad.\n\n:( - Care after seeing the 50th unoptimized psych engine port",
-    "We hope you enjoy the mod!"
+    "I hope you enjoy the mod!"
 ];
 static var introCount:Int = 0;
 
