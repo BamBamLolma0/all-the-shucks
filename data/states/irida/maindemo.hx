@@ -45,12 +45,9 @@ function update() {
 
     if ((controls.ACCEPT || FlxG.keys.justPressed) && !trans) {
         trans = true;
-        sfx.play(true);
         new FlxTimer().start(sfx.length / 4750, () -> switch (curMain) {
             case 0:
-                MusicBeatState.skipTransOut = true;
-                PlayState.loadSong("shucks");
-                FlxG.switchState(new PlayState());
+                FlxG.switchState(new ModState("irida/emptyfreeplay"));
             case 1 | 2 | 4: FlxG.switchState(new ModState("irida/" + ["codes", "gallery", null, "credits"][curMain - 1]));
             case 3: FlxG.switchState(new OptionsMenu());
             default: trace("end");
