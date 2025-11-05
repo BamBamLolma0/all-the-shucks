@@ -10,5 +10,8 @@
 	"displayName": "shucks",
 	"beatsPerMeasure": 4,
 	"needsVoices": true,
+	"variants": [
+		"Version 1"
+	],
 	"bpm": 195
 }
